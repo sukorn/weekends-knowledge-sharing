@@ -2,7 +2,7 @@ name: Weekends-Knowledge-Sharing-Workflow
 
 on:
   pull_request:
-    types: [opened]
+    types: [closed]
     branches: [main]
 
   workflow_dispatch:
