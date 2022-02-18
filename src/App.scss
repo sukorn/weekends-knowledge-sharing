@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  img {
+    z-index: 1000;
+  }
 }
 
 .App-logo {
@@ -35,4 +38,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.particles-bg-canvas-self {
+  background-color: #282c34;
 }
