@@ -34,7 +34,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-buildx-
 
-      - name: Build Docker Image and Push to docker hub
+      - name: Verify Changed files
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          list-files: "none"
+          filters: |
+            all:
+              - '../../**'
+
+      - name: Perform action when some files are changed
+        if: steps.changes.outputs.all == 'true'
         uses: docker/build-push-action@v2
         id: docker_build
         with:
