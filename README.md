@@ -11,3 +11,7 @@ In the project directory, you can run:
 ## For building the app
 
 `docker build -t phuicmt/weekends-knowledge-sharing .`
+
+`docker network create knowledge-sharing`
+
+`docker-compose up`
