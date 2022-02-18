@@ -41,7 +41,7 @@ jobs:
           list-files: "none"
           filters: |
             all:
-              - '../../**'
+              - './**'
 
       - name: Perform action when some files are changed
         if: steps.changes.outputs.all == 'true'
