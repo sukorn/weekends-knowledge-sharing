@@ -1,4 +1,4 @@
-import logo from "./assets/icons/git-system.png";
+import gitSystem from "./assets/icons/git-system.png";
 import "./App.scss";
 import Particles from "react-tsparticles";
 import Typing from "react-typing-animation";
@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={gitSystem} className="App-logo" alt="logo" />
           <AnimatedTypingTitle />
         </header>
         <Background />
