@@ -1,6 +1,8 @@
 name: Weekends-Knowledge-Sharing-Workflow
 
 on:
+  push:
+    branches: [main]
   pull_request:
     branches: [main]
 
