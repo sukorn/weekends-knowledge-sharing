@@ -7,3 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 #### `yarn start:dev` -> (dev with real-time preview)
+
+## For building the app
+
+`docker build -t phuicmt/weekends-knowledge-sharing .`
