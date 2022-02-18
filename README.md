@@ -15,3 +15,5 @@ In the project directory, you can run:
 `docker network create knowledge-sharing`
 
 `docker-compose up`
+
+# With out workflow
