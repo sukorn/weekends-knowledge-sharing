@@ -60,4 +60,4 @@ jobs:
             docker-compose up -d
 
       - name: Deployed!
-        run: echo Web Deployed! -> 139.5.145.98
+        run: echo Web Deployed!
