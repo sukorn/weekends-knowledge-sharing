@@ -18,9 +18,22 @@ function App() {
 }
 
 const AnimatedTypingTitle = () => {
+  function removeText() {
+    return (
+      <>
+        <Typing.Delay ms={1000} />
+        <Typing.Backspace count={35} />
+      </>
+    );
+  }
   return (
-    <Typing loop={false}>
-      <h>Weekends Knowledge Sharing 2022</h>
+    <Typing loop={true}>
+      <span className="title">Weekends Knowledge Sharing 2022...</span>
+      {removeText()}
+      <span className="first">#1 GitHub Action, Basic DevOps </span>
+      {removeText()}
+      <span className="second">#2 Git System</span>
+      {removeText()}
     </Typing>
   );
 };
