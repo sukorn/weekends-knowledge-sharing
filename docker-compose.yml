@@ -27,12 +27,12 @@ services:
     volumes:
       - portainer_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
-    networks:
-      - knowledge-sharing
     ports:
       - "9000:9000"
     expose:
       - "9000"
+    networks:
+      - knowledge-sharing
 
 volumes:
   portainer_data:
