@@ -41,8 +41,8 @@ jobs:
           list-files: "none"
           filters: |
             all:
-              - '.src/**'
-              - '.public/**'
+              - 'src/**'
+              - 'public/**'
               - './Dockerfile'
 
       - name: Perform action when some files are changed

@@ -21,7 +21,7 @@ const AnimatedTypingTitle = () => {
   function removeText() {
     return (
       <>
-        <Typing.Delay ms={1000} />
+        <Typing.Delay ms={1500} />
         <Typing.Backspace count={35} />
       </>
     );
