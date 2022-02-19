@@ -22,17 +22,19 @@ services:
 
   portainer:
     container_name: portainer
-    restart: unless-stopped
+    restart: always
     image: portainer/portainer
-    security_opt:
-      - no-new-privileges:true
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - portainer_data:/data
     ports:
-      - "8000:9000"
+      - "9000:9000"
+      - "9443:9443"
+      - "8000:8000"
     expose:
+      - "9000"
+      - "9443"
       - "8000"
     networks:
       - knowledge-sharing
