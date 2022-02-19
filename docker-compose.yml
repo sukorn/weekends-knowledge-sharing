@@ -31,7 +31,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - portainer_data:/data
     ports:
-      - 9000:9000
+      - "8000:9000"
+    expose:
+      - "8000"
     networks:
       - knowledge-sharing
 
