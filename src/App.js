@@ -28,11 +28,11 @@ const AnimatedTypingTitle = () => {
   }
   return (
     <Typing loop={true}>
-      <span className="title">Weekends Knowledge Sharing 2022...</span>
+      <span className="title">Hello World!!!!!!!!!!!</span>
       {removeText()}
-      <span className="first">#1 GitHub Action, Basic DevOps</span>
+      <span className="first">TEST1</span>
       {removeText()}
-      <span className="second">#2 Git System</span>
+      <span className="second">TEST2</span>
       {removeText()}
     </Typing>
   );
