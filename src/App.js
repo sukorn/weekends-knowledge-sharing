@@ -22,7 +22,7 @@ const AnimatedTypingTitle = () => {
     return (
       <>
         <Typing.Delay ms={1500} />
-        <Typing.Backspace count={35} />
+        <Typing.Backspace count={40} />
       </>
     );
   }
