@@ -34,6 +34,8 @@ const AnimatedTypingTitle = () => {
       {removeText()}
       <span className="second">TEST2</span>
       {removeText()}
+      <span className="third">Hi, I'm Newii.</span>
+      {removeText()}
     </Typing>
   );
 };
